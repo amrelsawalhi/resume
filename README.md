@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Amr El Sawalhi
 
-**Healthcare Professional → Data Engineer**
+**Data Engineer**
 
 I build data engineering solutions with a unique perspective from 8+ years in pharmaceutical sales. My background gives me deep insights into customer needs and market dynamics.
 
