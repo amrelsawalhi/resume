@@ -20,15 +20,15 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          {/* Profile Image Placeholder */}
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 100 }}
-            className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-2xl font-bold shadow-lg"
-          >
-            Amr El Sawalhi
-          </motion.div>
+                     {/* Name Display */}
+           <motion.h2
+             initial={{ opacity: 0, y: 20 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ delay: 0.2, duration: 0.8 }}
+             className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-gray-800"
+           >
+             Amr El Sawalhi
+           </motion.h2>
 
           {/* Main Headline */}
           <motion.h1
