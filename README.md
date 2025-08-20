@@ -7,7 +7,7 @@ I build data engineering solutions with a unique perspective from 8+ years in ph
 ## 🚀 Featured Projects
 
 - **[DipSignal](https://github.com/amrelsawalhi/DipSignal)** - AI-powered crypto trading pipeline
-- **[LoL Analytics](https://github.com/amrelsawalhi/leagueoflegends)** - Sports data pipeline
+- **[LoL Analytics](https://github.com/amrelsawalhi/leagueoflegends)** - League of Legends champions data pipeline
 - **[Dijamour](https://github.com/amrelsawalhi/Dijamour-public)** - Wedding venue discovery app
 - **[FeelyText](https://github.com/amrelsawalhi/sentiment-analysis)** - Sentiment analysis tool
 
