@@ -21,7 +21,7 @@ I build data engineering solutions with a unique perspective from 8+ years in ph
 
 - **Email**: amr.elsawalhi.business@gmail.com
 - **LinkedIn**: [amrelsawalhi](https://www.linkedin.com/in/amrelsawalhi/)
-- **Portfolio**: [amrelsawalhi.github.io/amrelsawalhi](https://amrelsawalhi.github.io/amrelsawalhi/)
+       - **Portfolio**: [amrelsawalhi.github.io/resume](https://amrelsawalhi.github.io/resume/)
 
 ---
 

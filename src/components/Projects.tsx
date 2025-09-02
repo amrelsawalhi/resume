@@ -19,7 +19,7 @@ const Projects = () => {
       technologies: ["Python", "LLaMA 3.1", "Binance API", "GitHub Actions", "Power BI"],
       github: "https://github.com/amrelsawalhi/DipSignal",
       demo: null,
-      image: "/amrelsawalhi/screenshots/dipsignal.jpg",
+      image: "/resume/screenshots/dipsignal.jpg",
       category: "Business Intelligence",
       icon: <TrendingUp className="w-6 h-6" />
     },
@@ -31,7 +31,7 @@ const Projects = () => {
       technologies: ["Python", "Riot API", "PostgreSQL", "GitHub Actions", "Streamlit", "Power BI"],
       github: "https://github.com/amrelsawalhi/leagueoflegends",
       demo: null,
-      image: "/amrelsawalhi/screenshots/lol-analytics.jpg",
+      image: "/resume/screenshots/lol-analytics.jpg",
       category: "Sports Analytics",
       icon: <Database className="w-6 h-6" />
     },
@@ -43,7 +43,7 @@ const Projects = () => {
       technologies: ["React Native", "TypeScript", "Supabase", "Expo"],
       github: "https://github.com/amrelsawalhi/Dijamour-public",
       demo: null,
-      image: "/amrelsawalhi/screenshots/dijamour.jpg",
+      image: "/resume/screenshots/dijamour.jpg",
       category: "Mobile App",
       icon: <Smartphone className="w-6 h-6" />
     },
@@ -55,7 +55,7 @@ const Projects = () => {
       technologies: ["Python", "Streamlit", "NLP", "Machine Learning"],
       github: "https://github.com/amrelsawalhi/sentiment-analysis",
       demo: null,
-      image: "/amrelsawalhi/screenshots/feelytext.jpg",
+      image: "/resume/screenshots/feelytext.jpg",
       category: "Customer Analytics",
       icon: <Brain className="w-6 h-6" />
     },

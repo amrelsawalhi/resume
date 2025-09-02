@@ -61,7 +61,7 @@ const About = () => {
             <span className="gradient-text">About My Journey</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From healthcare sales to data analysis - a unique perspective on uncovering business insights from data
+            From healthcare sales to business intelligence analytics - a unique perspective on building data-driven business solutions
           </p>
         </motion.div>
 
@@ -82,11 +82,11 @@ const About = () => {
               </p>
               
                              <p className="text-lg text-gray-700 leading-relaxed">
-                 Recognizing the growing importance of data in healthcare and business, I embarked on a self-directed learning journey in programming and data analysis. This transition wasn&apos;t just about learning new technical skills—it was about applying my business acumen to uncover insights from data that drive business decisions.
+                 Recognizing the growing importance of data in healthcare and business, I embarked on a self-directed learning journey in programming and business intelligence analytics. This transition wasn&apos;t just about learning new technical skills—it was about applying my business acumen to build BI solutions that drive strategic business decisions.
                </p>
                
                <p className="text-lg text-gray-700 leading-relaxed">
-                 Today, I combine my healthcare business background with analytical expertise to bridge the gap between data and business strategy, helping organizations make informed decisions based on customer behavior and market trends.
+                 Today, I combine my healthcare business background with BI analytics expertise to bridge the gap between data and business strategy, helping organizations build intelligence systems and make informed decisions based on customer behavior and market trends.
                </p>
             </div>
           </motion.div>

@@ -39,7 +39,7 @@ const Hero = () => {
           >
             <span className="gradient-text">Healthcare Professional</span>
             <br />
-            <span className="text-gray-800">→ Data Analyst</span>
+            <span className="text-gray-800">→ BI Analytics</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -49,7 +49,7 @@ const Hero = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            Leveraging 8+ years of international business experience to uncover actionable insights from data
+            Leveraging 8+ years of international business experience to build business intelligence solutions and uncover actionable insights
           </motion.p>
 
           {/* Key Message */}
@@ -60,7 +60,7 @@ const Hero = () => {
             className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 mb-8 shadow-lg border border-gray-200"
           >
             <p className="text-lg text-gray-700 italic">
-              &ldquo;Healthcare business professional with 8+ years of international sales experience transitioning to data analysis. My background in pharmaceutical sales provides unique insights into customer behavior, market dynamics, and business intelligence needs.&rdquo;
+              &ldquo;Healthcare business professional with 8+ years of international sales experience transitioning to business intelligence analytics. My background in pharmaceutical sales provides unique insights into customer behavior, market dynamics, and business intelligence needs.&rdquo;
             </p>
           </motion.div>
 
