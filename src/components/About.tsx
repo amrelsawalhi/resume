@@ -22,8 +22,8 @@ const About = () => {
     },
     {
       icon: <Code className="w-6 h-6" />,
-      title: "End-to-End Development",
-      description: "Full-stack project development from concept to deployment with modern technologies"
+      title: "Data Analysis & Insights",
+      description: "End-to-end data analysis from collection to actionable business insights and recommendations"
     },
     {
       icon: <Award className="w-6 h-6" />,
@@ -61,7 +61,7 @@ const About = () => {
             <span className="gradient-text">About My Journey</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From healthcare sales to data engineering - a unique perspective on building data-driven solutions
+            From healthcare sales to data analysis - a unique perspective on uncovering business insights from data
           </p>
         </motion.div>
 
@@ -81,13 +81,13 @@ const About = () => {
                 My journey began in pharmaceutical sales, where I spent 8 years working in international markets across Egypt and Saudi Arabia. This experience gave me invaluable insights into customer behavior, market dynamics, and the critical role of data in business decision-making.
               </p>
               
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Recognizing the growing importance of data in healthcare and business, I embarked on a self-directed learning journey in programming and data engineering. This transition wasn&apos;t just about learning new technical skills—it was about applying my business acumen to build data-driven solutions that solve real-world problems.
-              </p>
-              
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Today, I combine my healthcare business background with technical expertise to create end-to-end data solutions that bridge the gap between business needs and technical implementation.
-              </p>
+                             <p className="text-lg text-gray-700 leading-relaxed">
+                 Recognizing the growing importance of data in healthcare and business, I embarked on a self-directed learning journey in programming and data analysis. This transition wasn&apos;t just about learning new technical skills—it was about applying my business acumen to uncover insights from data that drive business decisions.
+               </p>
+               
+               <p className="text-lg text-gray-700 leading-relaxed">
+                 Today, I combine my healthcare business background with analytical expertise to bridge the gap between data and business strategy, helping organizations make informed decisions based on customer behavior and market trends.
+               </p>
             </div>
           </motion.div>
 

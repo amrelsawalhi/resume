@@ -28,38 +28,38 @@ const Experience = () => {
   ];
 
   const careerTransition = {
-    title: "Career Transition to Data Engineering",
+    title: "Career Transition to Data Analysis",
     duration: "2023 - Present",
-    description: "Self-directed learning journey in programming and data engineering, building end-to-end solutions while leveraging business experience.",
+    description: "Self-directed learning journey in programming and data analysis, uncovering business insights while leveraging healthcare business experience.",
     achievements: [
       "Self-taught programming in Python and SQL",
-      "Built comprehensive data engineering projects from concept to deployment",
+      "Built comprehensive data analysis projects from concept to insights",
       "Earned DataCamp Data Engineer and Data Engineer Associate certifications",
-      "Developed understanding of ETL, data modeling, and API integration",
-      "Created data-driven applications with modern technologies"
+      "Developed understanding of data analysis, visualization, and business intelligence",
+      "Created data-driven insights with modern analytical tools"
     ],
-    skills: ["Python", "SQL", "ETL", "API Integration", "Data Modeling"]
+    skills: ["Python", "SQL", "Data Analysis", "Data Visualization", "Business Intelligence"]
   };
 
   const targetRoles = [
     {
-      title: "Junior Data Engineer",
-      description: "Building and maintaining data pipelines, ETL processes, and data infrastructure",
+      title: "Data Analyst",
+      description: "Analyzing data to provide actionable insights for healthcare/pharma companies",
       icon: <TrendingUp className="w-6 h-6" />
     },
     {
-      title: "Business Intelligence Developer",
+      title: "Business Intelligence Analyst",
       description: "Creating data visualizations, dashboards, and business intelligence solutions",
       icon: <TrendingUp className="w-6 h-6" />
     },
     {
-      title: "Data Analyst",
-      description: "Analyzing data to provide insights for healthcare/pharma companies",
+      title: "Customer Analytics Specialist",
+      description: "Leveraging customer data to drive business strategy and market insights",
       icon: <TrendingUp className="w-6 h-6" />
     },
     {
-      title: "Analytics Engineer",
-      description: "Building data models and analytics infrastructure for business teams",
+      title: "Healthcare Data Analyst",
+      description: "Applying pharmaceutical business knowledge to healthcare data analysis",
       icon: <TrendingUp className="w-6 h-6" />
     }
   ];

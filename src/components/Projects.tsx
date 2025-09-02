@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { Github, ExternalLink, Star, Code, Database, Smartphone, Brain, TrendingUp } from 'lucide-react';
+import { Github, ExternalLink, Code, Database, Smartphone, Brain, TrendingUp } from 'lucide-react';
 
 const Projects = () => {
   const ref = useRef(null);
@@ -13,28 +13,26 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      name: "DipSignal - Crypto Trading Pipeline",
-      description: "End-to-end AI-powered crypto sentiment & price signal generator with real-time data processing and automated trading signals.",
-      longDescription: "A comprehensive crypto trading pipeline that combines real-time market data, sentiment analysis using LLaMA 3.1, and automated decision-making. Features include real-time data processing from Binance API, sentiment analysis of market news, macro-economic correlation analysis, and automated trading signal generation with Power BI dashboards.",
+      name: "DipSignal - Market Sentiment Analysis",
+      description: "AI-powered market sentiment analysis tool that combines real-time data processing with business intelligence for trading insights.",
+      longDescription: "A comprehensive market analysis platform that combines real-time market data, sentiment analysis using LLaMA 3.1, and business intelligence dashboards. Features include real-time data processing from Binance API, sentiment analysis of market news, macro-economic correlation analysis, and Power BI dashboards for actionable business insights.",
       technologies: ["Python", "LLaMA 3.1", "Binance API", "GitHub Actions", "Power BI"],
       github: "https://github.com/amrelsawalhi/DipSignal",
       demo: null,
       image: "/amrelsawalhi/screenshots/dipsignal.jpg",
-      rating: 5,
-      category: "Data Engineering",
+      category: "Business Intelligence",
       icon: <TrendingUp className="w-6 h-6" />
     },
     {
       id: 2,
-      name: "LoL Analytics - Sports Data Pipeline",
-      description: "Comprehensive League of Legends data pipeline with automated collection, dimensional modeling, and real-time analytics dashboard.",
-      longDescription: "A complete sports analytics platform for League of Legends that automates data collection from Riot API, implements dimensional modeling for performance analysis, and provides real-time dashboards. The system tracks champion performance, player statistics, and meta trends with automated data processing and visualization.",
+      name: "LoL Analytics - Performance Insights Platform",
+      description: "Comprehensive League of Legends analytics platform providing performance insights and trend analysis for strategic decision-making.",
+      longDescription: "A complete sports analytics platform for League of Legends that automates data collection from Riot API, implements dimensional modeling for performance analysis, and provides real-time dashboards. The system tracks champion performance, player statistics, and meta trends to deliver actionable insights for strategic planning and performance optimization.",
       technologies: ["Python", "Riot API", "PostgreSQL", "GitHub Actions", "Streamlit", "Power BI"],
       github: "https://github.com/amrelsawalhi/leagueoflegends",
       demo: null,
       image: "/amrelsawalhi/screenshots/lol-analytics.jpg",
-      rating: 4,
-      category: "Data Pipeline",
+      category: "Sports Analytics",
       icon: <Database className="w-6 h-6" />
     },
     {
@@ -46,21 +44,19 @@ const Projects = () => {
       github: "https://github.com/amrelsawalhi/Dijamour-public",
       demo: null,
       image: "/amrelsawalhi/screenshots/dijamour.jpg",
-      rating: 4,
       category: "Mobile App",
       icon: <Smartphone className="w-6 h-6" />
     },
     {
       id: 4,
-      name: "FeelyText - Sentiment Analysis",
-      description: "Interactive sentiment analysis tool with machine learning pipeline and user feedback loop for continuous improvement.",
-      longDescription: "A machine learning application that provides interactive sentiment analysis for text input. Features include NLP processing, sentiment classification, user feedback collection for model improvement, and a clean Streamlit interface. The system demonstrates end-to-end ML pipeline development and deployment.",
+      name: "FeelyText - Customer Sentiment Analysis",
+      description: "Interactive sentiment analysis tool for understanding customer feedback and market sentiment to drive business decisions.",
+      longDescription: "A machine learning application that provides interactive sentiment analysis for text input, perfect for customer feedback analysis and market research. Features include NLP processing, sentiment classification, user feedback collection for model improvement, and a clean Streamlit interface. The system delivers actionable insights from customer sentiment data.",
       technologies: ["Python", "Streamlit", "NLP", "Machine Learning"],
       github: "https://github.com/amrelsawalhi/sentiment-analysis",
       demo: null,
       image: "/amrelsawalhi/screenshots/feelytext.jpg",
-      rating: 3,
-      category: "Machine Learning",
+      category: "Customer Analytics",
       icon: <Brain className="w-6 h-6" />
     },
     {
@@ -72,21 +68,12 @@ const Projects = () => {
       github: "https://github.com/amrelsawalhi/jumia-price-etl-streamlit",
       demo: null,
       image: null,
-      rating: 2,
       category: "ETL",
       icon: <Code className="w-6 h-6" />
     }
   ];
 
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, i) => (
-      <Star
-        key={i}
-        size={16}
-        className={i < rating ? "text-yellow-400 fill-current" : "text-gray-300"}
-      />
-    ));
-  };
+
 
   return (
     <section id="projects" className="section-padding bg-slate-50">
@@ -132,9 +119,7 @@ const Projects = () => {
                     </div>
                   </div>
                 )}
-                <div className="absolute top-4 right-4 flex">
-                  {renderStars(project.rating)}
-                </div>
+                
                 <div className="absolute top-4 left-4">
                   <div className="w-12 h-12 bg-white/90 backdrop-blur-sm rounded-lg flex items-center justify-center">
                     <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center text-white">

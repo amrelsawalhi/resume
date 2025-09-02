@@ -10,25 +10,25 @@ const Skills = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const technicalSkills = [
-    { name: "Python", level: 90, icon: <Code className="w-5 h-5" /> },
-    { name: "SQL", level: 88, icon: <Database className="w-5 h-5" /> },
-    { name: "ETL & Data Modeling", level: 85, icon: <Database className="w-5 h-5" /> },
-    { name: "API Integration", level: 90, icon: <Code className="w-5 h-5" /> },
-    { name: "Git & GitHub", level: 85, icon: <Wrench className="w-5 h-5" /> },
-    { name: "PostgreSQL", level: 80, icon: <Database className="w-5 h-5" /> },
-    { name: "Power BI", level: 75, icon: <TrendingUp className="w-5 h-5" /> },
-    { name: "Streamlit", level: 85, icon: <Code className="w-5 h-5" /> },
-    { name: "AWS (Learning)", level: 60, icon: <Cloud className="w-5 h-5" /> },
-    { name: "Docker (Learning)", level: 50, icon: <Wrench className="w-5 h-5" /> },
+    { name: "Python", icon: <Code className="w-5 h-5" /> },
+    { name: "SQL", icon: <Database className="w-5 h-5" /> },
+    { name: "Data Analysis", icon: <Database className="w-5 h-5" /> },
+    { name: "Data Visualization", icon: <Code className="w-5 h-5" /> },
+    { name: "Git & GitHub", icon: <Wrench className="w-5 h-5" /> },
+    { name: "PostgreSQL", icon: <Database className="w-5 h-5" /> },
+    { name: "Power BI", icon: <TrendingUp className="w-5 h-5" /> },
+    { name: "Streamlit", icon: <Code className="w-5 h-5" /> },
+    { name: "Statistical Analysis", icon: <TrendingUp className="w-5 h-5" /> },
+    { name: "Business Intelligence", icon: <TrendingUp className="w-5 h-5" /> },
   ];
 
   const businessSkills = [
-    { name: "Sales & Relationship Building", level: 95, icon: <Users className="w-5 h-5" /> },
-    { name: "International Experience", level: 90, icon: <Globe className="w-5 h-5" /> },
-    { name: "Customer Focus", level: 92, icon: <Users className="w-5 h-5" /> },
-    { name: "Business Intelligence", level: 85, icon: <TrendingUp className="w-5 h-5" /> },
-    { name: "Market Analysis", level: 88, icon: <TrendingUp className="w-5 h-5" /> },
-    { name: "Competitive Intelligence", level: 85, icon: <TrendingUp className="w-5 h-5" /> },
+    { name: "Sales & Relationship Building", icon: <Users className="w-5 h-5" /> },
+    { name: "International Experience", icon: <Globe className="w-5 h-5" /> },
+    { name: "Customer Focus", icon: <Users className="w-5 h-5" /> },
+    { name: "Business Intelligence", icon: <TrendingUp className="w-5 h-5" /> },
+    { name: "Market Analysis", icon: <TrendingUp className="w-5 h-5" /> },
+    { name: "Competitive Intelligence", icon: <TrendingUp className="w-5 h-5" /> },
   ];
 
   const certifications = [
@@ -76,29 +76,17 @@ const Skills = () => {
               <h3 className="text-2xl font-bold text-gray-800">Technical Skills</h3>
             </div>
             
-            <div className="space-y-6">
+            <div className="space-y-4">
               {technicalSkills.map((skill, index) => (
                 <motion.div
                   key={skill.name}
                   initial={{ opacity: 0, x: -20 }}
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ delay: 0.4 + index * 0.1, duration: 0.6 }}
+                  className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200"
                 >
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2">
-                      <span className="text-blue-600">{skill.icon}</span>
-                      <span className="font-medium text-gray-800">{skill.name}</span>
-                    </div>
-                    <span className="text-sm font-semibold text-gray-600">{skill.level}%</span>
-                  </div>
-                  <div className="skill-bar">
-                    <motion.div
-                      className="skill-progress"
-                      initial={{ width: 0 }}
-                      animate={isInView ? { width: `${skill.level}%` } : {}}
-                      transition={{ delay: 0.6 + index * 0.1, duration: 1, ease: "easeOut" }}
-                    />
-                  </div>
+                  <span className="text-blue-600">{skill.icon}</span>
+                  <span className="font-medium text-gray-800">{skill.name}</span>
                 </motion.div>
               ))}
             </div>
@@ -117,29 +105,17 @@ const Skills = () => {
               <h3 className="text-2xl font-bold text-gray-800">Business Skills</h3>
             </div>
             
-            <div className="space-y-6">
+            <div className="space-y-4">
               {businessSkills.map((skill, index) => (
                 <motion.div
                   key={skill.name}
                   initial={{ opacity: 0, x: 20 }}
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{ delay: 0.6 + index * 0.1, duration: 0.6 }}
+                  className="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-200"
                 >
-                  <div className="flex items-center justify-between mb-2">
-                    <div className="flex items-center gap-2">
-                      <span className="text-green-600">{skill.icon}</span>
-                      <span className="font-medium text-gray-800">{skill.name}</span>
-                    </div>
-                    <span className="text-sm font-semibold text-gray-600">{skill.level}%</span>
-                  </div>
-                  <div className="skill-bar">
-                    <motion.div
-                      className="h-full bg-gradient-to-r from-green-500 to-teal-500 rounded-full transition-all duration-1000 ease-out"
-                      initial={{ width: 0 }}
-                      animate={isInView ? { width: `${skill.level}%` } : {}}
-                      transition={{ delay: 0.8 + index * 0.1, duration: 1, ease: "easeOut" }}
-                    />
-                  </div>
+                  <span className="text-green-600">{skill.icon}</span>
+                  <span className="font-medium text-gray-800">{skill.name}</span>
                 </motion.div>
               ))}
             </div>
@@ -196,7 +172,7 @@ const Skills = () => {
               What Sets Me Apart
             </h3>
             <p className="text-lg opacity-90 max-w-3xl mx-auto">
-              My unique combination of 8+ years in healthcare business with technical data engineering skills allows me to bridge the gap between business needs and technical implementation. I understand both the customer perspective and the technical requirements to build effective data solutions.
+              My unique combination of 8+ years in healthcare business with analytical skills allows me to bridge the gap between data and business strategy. I understand both the customer perspective and the analytical requirements to deliver actionable business insights.
             </p>
           </div>
         </motion.div>
